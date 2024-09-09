@@ -1,0 +1,36 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs and backups
+*.log
+*.bak
+*.backup
+*.old
+
+# IDE/Editor settings
+.idea/
+.vscode/
+
+# Node.js dependencies and lock files
+node_modules/
+package-lock.json
+yarn.lock
+
+# Composer dependencies
+vendor/
+composer.lock
+
+# Compiled assets
+*.min.js
+*.min.css
+
+# Environment configuration
+.env
+
+# Cache
+cache/
+
+# WordPress config and dev-specific files
+wp-config.php
+error_log
