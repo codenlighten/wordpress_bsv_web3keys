@@ -171,6 +171,18 @@ function smartledger_mnemonic_key_generator_shortcode() {
     display: inline-block;
     margin-right: 10px;
   }
+  #reset {
+        /* orange */
+        background-color: #ff5400;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      #reset:hover {
+        background-color: #f0f0f5;
+      }
 
   @media (max-width: 768px) {
     h1 {
@@ -195,7 +207,7 @@ function smartledger_mnemonic_key_generator_shortcode() {
     <input type="text" id="mnemonicOptional" placeholder="Enter your optional mnemonic here..." />
     <input type="checkbox" id="showAdvanced" />
     <label for="showAdvanced">Show Advanced Options</label>
-    <div id="advanced" style="display: none">
+    <div id="advancedOptions" style="display: none">
       <h3>Advanced Options:</h3>
       <p id="basePath"></p>
       <p>Choose Derivation Path</p>

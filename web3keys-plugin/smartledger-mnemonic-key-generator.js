@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const datatoHash = document.getElementById("dataToHash");
   const hashButton = document.getElementById("hashButton");
   const hashOutput = document.getElementById("hashOutput");
+  const reset = document.getElementById("reset");
   let base = "m/44'/0'/0'/0/0";
   const hashData = (data) => {
     return window.smartledger.hash(data);
@@ -152,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
     base = "m/44'/0'/0'/0/0";
     basePathElement.innerText = base;
   };
-
+  reset.addEventListener("click", resetDerivationPath);
   // Store mnemonic in local storage
   if (storeButton) {
     storeButton.addEventListener("click", () => {
