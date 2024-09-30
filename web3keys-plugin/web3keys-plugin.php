@@ -54,7 +54,7 @@ function smartledger_mnemonic_key_generator_settings_page_html() {
 // Enqueue the necessary JavaScript and CSS
 function smartledger_mnemonic_key_generator_enqueue_scripts() {
   // Enqueue the external library (smartledger)
-  wp_enqueue_script('smartledger-lib', 'https://plugins.whatsonchain.com/api/plugin/main/33b1d395fc114c7dc6a3a06d370d6356f2272076dcac903251f7b4212fd311c4', null, null, true);
+  wp_enqueue_script('smartledger-lib', 'https://plugins.whatsonchain.com/api/plugin/main/168d796a870dec5cc241dacf140fdbbc2212c9e1ca83614e82914fc42c6d1052', null, null, true);
 
   // Enqueue the custom script that handles both mnemonic generation and signing
   wp_enqueue_script('smartledger-mnemonic-key-generator', plugin_dir_url(__FILE__) . 'smartledger-mnemonic-key-generator.js', array('smartledger-lib'), null, true);
